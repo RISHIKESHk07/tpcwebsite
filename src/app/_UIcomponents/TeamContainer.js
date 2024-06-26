@@ -1,38 +1,80 @@
 "use client";
 
-const TeamContainer = ({ title, modalTitle }) => {
-  console.log("TeamContainer", title, modalTitle);
+import { useEffect, useRef, useState } from "react";
+import BatchContainer from "./BatchContainer";
+import TicketCard from "./TicketCard";
+
+const TeamContainer = ({ title }) => {
+  const [popUp, setpopUp] = useState(false);
+  const modalRef = useRef(null);
+
+  // Close modal if clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        setpopUp(false);
+      }
+    };
+
+    if (popUp) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [popUp]);
+
   return (
-    <div className="bbx container mx-auto h-48 relative">
+    <div className="container mx-auto h-48 relative">
       <div
         className="bbx absolute inset-0 flex-center max-sm:mx-6 max-w-[850px] mx-auto rounded-lg"
-        onClick={() => document.getElementById("my_modal_3").showModal()}>
+        onClick={() => setpopUp(true)}
+      >
         <div>
           <p className="text-4xl max-sm:text-2xl">{title ?? "Team Title"}</p>
         </div>
       </div>
-      <dialog id="my_modal_3" className="modal">
-        <div className="modal-box">
-          <form method="dialog">
-            {/* if there is a button in form, it will close the modal */}
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+      {popUp && (
+        <div
+          ref={modalRef}
+          className={`bg-gray-700 inset-0 fixed my-16 rounded-3xl z-10 ${title !== "Office Bearers" ? "overflow-y-scroll mx-32 md:mx-64 lg:mx-96" : ""}`}
+        >
+          <div>
+            <button
+              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-5"
+              onClick={() => setpopUp(false)}
+            >
               ✕
             </button>
-          </form>
-          <ModalContent title={modalTitle} />
+            <ModalContent title={title} />
+          </div>
         </div>
-      </dialog>
+      )}
     </div>
   );
 };
 
 const ModalContent = ({ title }) => {
   return (
-    <div>
-      <h3 className="font-bold text-lg">Hello! {title ?? 'No Name'}</h3>
-      <p className="py-4">Press ESC key or click on ✕ button to close</p>
+    <div className="flex flex-col items-center gap-5 p-5">
+      <h3 className="font-bold text-2xl text-slate-300">{title}</h3>
+      {title === "Office Bearers" ? (
+        <div className="flex items-center justify-center gap-5">
+          <TicketCard/>
+          <TicketCard/>
+        </div>
+      ) : (
+        <>
+          <BatchContainer batchName={"2020 batch"} teamName={title} />
+          <BatchContainer batchName={"2021 batch"} teamName={title} />
+          <BatchContainer batchName={"2022 batch"} teamName={title} />
+        </>
+      )}
     </div>
-  )
-}
+  );
+};
 
 export default TeamContainer;
