@@ -31,22 +31,19 @@ const TeamContainer = ({ title }) => {
     <div className="container mx-auto h-48 relative">
       <div
         className="bbx absolute inset-0 flex-center max-sm:mx-6 max-w-[850px] mx-auto rounded-lg"
-        onClick={() => setpopUp(true)}
-      >
-        <div>
-          <p className="text-4xl max-sm:text-2xl">{title ?? "Team Title"}</p>
-        </div>
+        onClick={() => setpopUp(true)}>
+        <p className="text-4xl max-sm:text-2xl text-center">
+          {title ?? "Team Title"}
+        </p>
       </div>
       {popUp && (
         <div
           ref={modalRef}
-          className={`bg-gray-700 inset-0 fixed my-16 rounded-3xl z-10 ${title !== "Office Bearers" ? "overflow-y-scroll mx-32 md:mx-64 lg:mx-96" : ""}`}
-        >
+          className={`bg-gray-700 inset-0 fixed my-12 rounded-3xl z-10 max-sm:mx-4 sm:mx-4 md:mx-10 overflow-y-scroll`}>
           <div>
             <button
               className="btn btn-sm btn-circle btn-ghost absolute right-2 top-5"
-              onClick={() => setpopUp(false)}
-            >
+              onClick={() => setpopUp(false)}>
               ✕
             </button>
             <ModalContent title={title} />
@@ -60,11 +57,11 @@ const TeamContainer = ({ title }) => {
 const ModalContent = ({ title }) => {
   return (
     <div className="flex flex-col items-center gap-5 p-5">
-      <h3 className="font-bold text-2xl text-slate-300">{title}</h3>
+      <h3 className="font-bold text-2xl text-slate-300 text-center">{title}</h3>
       {title === "Office Bearers" ? (
-        <div className="flex items-center justify-center gap-5">
-          <TicketCard/>
-          <TicketCard/>
+        <div className="flex max-sm:flex-col items-center justify-center gap-5">
+          <TicketCard />
+          <TicketCard />
         </div>
       ) : (
         <>

@@ -2,7 +2,7 @@ import TeamContainer from '../_UIcomponents/TeamContainer'
 
 const page = () => {
   return (
-    <div className='flex flex-col gap-4'>
+    <div className='flex flex-col gap-4 mx-4'>
       <TeamContainer title={'Office Bearers'} />
       <TeamContainer title={'Developers'} />
       <TeamContainer title={'Competitive Programmers'} />
