@@ -39,7 +39,7 @@ const TeamContainer = ({ title }) => {
       {popUp && (
         <div
           ref={modalRef}
-          className={`bg-gray-700 inset-0 fixed my-12 rounded-3xl z-10 max-sm:mx-4 sm:mx-4 md:mx-10 overflow-y-scroll`}>
+          className={`bg-[#1a1a1a] inset-0 fixed my-12 rounded-3xl z-10 max-sm:mx-4 sm:mx-4 md:mx-10 overflow-y-scroll`}>
           <div>
             <button
               className="btn btn-sm btn-circle btn-ghost absolute right-2 top-5"
