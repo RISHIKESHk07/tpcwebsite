@@ -6,7 +6,6 @@ import TeamContainer from "../_UIcomponents/TeamContainer";
 function page() {
   return (
     <div className="min-h-screen mx-auto">
-      <Navbar />
       <main className="min-h-screen w-full py-6">
         <div className="flex justify-center items-center flex-col gap-2 mb-12">
           <h1 className="text-4xl md:text-6xl font-semibold text-center">
@@ -22,7 +21,6 @@ function page() {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

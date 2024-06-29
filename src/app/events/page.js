@@ -1,6 +1,4 @@
 "use client"
-import Footer from "../_UIcomponents/Footer";
-import Navbar from "../_UIcomponents/Navbar";
 
 const PastEvent = () => {
   return (
@@ -21,7 +19,6 @@ const OurEvent = () => {
 function page() {
   return (
     <div className=" min-h-full w-full mx-auto">
-      <Navbar />
       <main className="bg-[#000]">
         <p className="text-6xl my-4 text-center text-transparent bg-clip-text bg-gradient-linear green-gradient-text">Events</p>
         <p className=" text-white text-center opacity-60">
@@ -54,7 +51,6 @@ function page() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   )
 }

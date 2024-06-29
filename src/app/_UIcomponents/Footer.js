@@ -8,8 +8,8 @@ import {
 
 const Footer = () => {
 	return (
-		<div className="w-screen flex justify-center py-4">
-			<div className="flex justify-between w-[80%] sm:w-1/2">
+		<div className="w-full flex justify-center py-4">
+			<div className="flex justify-between w-full px-8 sm:w-1/2">
 				<a
 					href="https://www.instagram.com/bitbyte.tpc/"
 					target="_blank"
