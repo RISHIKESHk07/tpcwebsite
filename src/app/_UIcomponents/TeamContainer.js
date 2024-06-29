@@ -4,6 +4,7 @@ import { teamsData } from "@/data";
 import { useEffect, useRef, useState } from "react";
 import BatchContainer from "./BatchContainer";
 import TicketCard from "./TicketCard";
+import CustomCarousel from "./CustomCarousel";
 
 const TeamContainer = ({ title }) => {
   const [popUp, setpopUp] = useState(false);
@@ -40,7 +41,7 @@ const TeamContainer = ({ title }) => {
         <p className="text-4xl max-sm:text-2xl text-center font-semibold">
           {title}
         </p>
-        <div className="w-[90%] flex gap-6 overflow-x-auto rounded-[20px] snap-x custom-scroll">
+        <CustomCarousel>
           {mockCards.map((card, index) => {
             return (
               <div key={index} className="snap-center">
@@ -53,7 +54,7 @@ const TeamContainer = ({ title }) => {
               Click to view all
             </div>
           </div>
-        </div>
+        </CustomCarousel>
       </div>
       {popUp && (
         <div
@@ -81,7 +82,7 @@ const ModalContent = ({ title }) => {
     <div className="flex flex-col items-center gap-5 p-5">
       <h3 className="font-bold text-2xl text-slate-300 text-center">{title}</h3>
       {title === "Office Bearers" ? (
-        <div className="flex gap-4 snap-x overflow-x-auto bg-transparent max-sm:max-w-[290px] sm:max-w-[290px] md:max-w-[594px] lg:max-w-[896px] rounded-[20px] custom-scroll">
+        <CustomCarousel>
           {allCards.map((card, index) => {
             return (
               <div key={index} className="snap-center">
@@ -89,7 +90,7 @@ const ModalContent = ({ title }) => {
               </div>
             );
           })}
-        </div>
+        </CustomCarousel>
       ) : (
         <>
           {batches.map((batch, index) => (

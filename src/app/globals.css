@@ -3,24 +3,19 @@
 @tailwind utilities;
 
 @layer base {
-  html , body {
-    @apply bg-black
+  html,
+  body {
+    @apply bg-black;
   }
 }
 
 @layer utils {
   .flex-center {
-    @apply flex justify-center items-center
+    @apply flex justify-center items-center;
   }
 }
 
 /* For debugging spaning of elements while styling */
 .bbx {
   border: 2px solid red;
-}
-
-/* For slider in carousel */
-.custom-scroll {
-  scrollbar-width: thin;
-  scrollbar-color: #3CFF5B #2b2b2b;
 }
