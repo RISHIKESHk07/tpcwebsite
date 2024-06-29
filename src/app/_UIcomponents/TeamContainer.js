@@ -88,7 +88,7 @@ const ModalContent = ({ title }) => {
   const batches = teamsData.find((team) => team.teamName === title)?.batches;
 
   return (
-    <div className="flex flex-col items-center gap-5 p-5">
+    <div className="flex flex-col items-center gap-12 p-5">
       <h3 className="font-bold text-2xl text-slate-300 text-center">{title}</h3>
       {title === "Office Bearers" ? (
         <CustomCarousel>
