@@ -45,7 +45,7 @@ const TeamContainer = ({ title }) => {
   return (
     <div className="container mx-auto h-[546px] relative">
       <div
-        className="bg-[#1a1a1a] absolute inset-0 flex-center flex-col gap-8 max-sm:mx-6 max-w-[1252px] mx-auto rounded-[20px] p-4 cursor-pointer"
+        className="bg-[#1a1a1a] absolute inset-0 flex justify-center items-center flex-col gap-8 max-sm:mx-6 max-w-[1252px] mx-auto rounded-[20px] p-4 cursor-pointer"
         onClick={() => setpopUp(true)}>
         <p className="text-4xl max-sm:text-2xl text-center font-semibold">
           {title}
@@ -59,7 +59,7 @@ const TeamContainer = ({ title }) => {
             );
           })}
           <div className="snap-center">
-            <div className="w-[287px] h-[388px] rounded-[20px] flex-center border-zinc-700 border-2 bg-[#333]">
+            <div className="w-[287px] h-[388px] rounded-[20px] flex justify-center items-center border-zinc-700 border-2 bg-[#333]">
               Click to view all
             </div>
           </div>

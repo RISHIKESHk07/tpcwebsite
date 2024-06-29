@@ -8,12 +8,3 @@
     @apply bg-black;
   }
 }
-
-@layer utils {
-  .flex-center {
-    @apply flex justify-center items-center;
-  }
-  .gradient-text {
-    @apply bg-gradient-to-br from-[#3CFF5B] to-[#2FCDFF] inline-block text-transparent bg-clip-text
-  }
-}
