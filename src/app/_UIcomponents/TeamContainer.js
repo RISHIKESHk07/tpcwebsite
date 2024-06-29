@@ -22,14 +22,23 @@ const TeamContainer = ({ title }) => {
       }
     };
 
+    const handleEscapeKey = (event) => {
+      if(event.key === "Escape"){
+        setpopUp(false);
+      }
+    }
+
     if (popUp) {
       document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("keydown", handleEscapeKey);
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscapeKey);
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscapeKey);
     };
   }, [popUp]);
 

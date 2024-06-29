@@ -6,10 +6,11 @@ const CustomCarousel = ({ children }) => {
   const carouselRef = useRef(null);
   const [scrollWidth, setScrollWidth] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
-  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+  const [viewportWidth, setViewportWidth] = useState(null);
 
   // Update viewport width on resize
   useEffect(() => {
+    setViewportWidth(window.innerWidth);
     const handleResize = () => {
       setViewportWidth(window.innerWidth);
     };
