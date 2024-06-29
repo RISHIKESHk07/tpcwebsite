@@ -1,3 +1,38 @@
+/* 
+  Structure of teamsData: [
+    teamName: "Name of the wing",
+    mockCards: [ //* Array of cards to show in Container
+      { //* TicketCard component props
+        name: "Name of the member",
+        position: "Position of the member",
+        ImageSRC: "Image source of the member",
+        links: {
+          linkedin: "linkedin link",
+          github: "github link",
+          instagram: "instagram link",
+        },
+      },
+    ],
+    batches: [ //* Array of batches to show in Modal
+      {
+        batchName: "Name of the batch",
+        batchMembers: [ //* Array of members in the batch to show in carousel
+          { //* TicketCard component props
+            name: "Name of the member",
+            position: "Position of the member",
+            ImageSRC: "Image source of the member",
+            links: {
+              linkedin: "linkedin link",
+              github: "github link",
+              instagram: "instagram link",
+            },
+          },
+        ],
+      },
+    ],
+  ]
+*/
+
 export const teamsData = [
   {
     teamName: "Office Bearers", // Title for Container for closed Modal
@@ -527,38 +562,3 @@ export const teamsData = [
     ],
   },
 ];
-
-/* 
-  Structure of teamsData: [
-    teamName: "Name of the wing",
-    mockCards: [ //* Array of cards to show in Container
-      { //* TicketCard component props
-        name: "Name of the member",
-        position: "Position of the member",
-        ImageSRC: "Image source of the member",
-        links: {
-          linkedin: "linkedin link",
-          github: "github link",
-          instagram: "instagram link",
-        },
-      },
-    ],
-    batches: [ //* Array of batches to show in Modal
-      {
-        batchName: "Name of the batch",
-        batchMembers: [ //* Array of members in the batch to show in carousel
-          { //* TicketCard component props
-            name: "Name of the member",
-            position: "Position of the member",
-            ImageSRC: "Image source of the member",
-            links: {
-              linkedin: "linkedin link",
-              github: "github link",
-              instagram: "instagram link",
-            },
-          },
-        ],
-      },
-    ],
-  ]
-*/
