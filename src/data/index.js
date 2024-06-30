@@ -33,6 +33,20 @@
   ]
 */
 
+/*
+structure of projectsData:[
+  {
+    titile: "Name of the project",
+    image: "Image source of the project",
+    description: "Description of the project",
+    links: {
+      github: "github link",
+      website: "website link",
+    },
+  },
+]
+*/
+
 export const teamsData = [
   {
     teamName: "Office Bearers", // Title for Container for closed Modal
@@ -76,7 +90,7 @@ export const teamsData = [
         ImageSRC: "Test image src",
         links: "Test links",
       },
-    ]
+    ],
   },
   {
     teamName: "Developers", // Title for Container for closed Modal
@@ -560,5 +574,80 @@ export const teamsData = [
         ],
       },
     ],
+  },
+];
+
+export const projectsData = [
+  {
+    title: "Project 1",
+    image: "Project image src",
+    description: "Project description",
+    links: {
+      github: "Project github link",
+      website: "Project website link",
+    },
+  },
+  {
+    title: "Project 2",
+    image: "Project image src",
+    description: "Project description",
+    links: {
+      github: "Project github link",
+      website: "Project website link",
+    },
+  },
+  {
+    title: "Project 3",
+    image: "Project image src",
+    description: "Project description",
+    links: {
+      github: "Project github link",
+      website: "Project website link",
+    },
+  },
+  {
+    title: "Project 4",
+    image: "Project image src",
+    description: "Project description",
+    links: {
+      github: "Project github link",
+      website: "Project website link",
+    },
+  },
+  {
+    title: "Project 5",
+    image: "Project image src",
+    description: "Project description",
+    links: {
+      github: "Project github link",
+      website: "Project website link",
+    },
+  },
+  {
+    title: "Project 6",
+    image: "Project image src",
+    description: "Project description",
+    links: {
+      github: "Project github link",
+      website: "Project website link",
+    },
+  },
+  {
+    title: "Project 7",
+    image: "Project image src",
+    description: "Project description",
+    links: {
+      github: "Project github link",
+      website: "Project website link",
+    },
+  },
+  {
+    title: "Project 8",
+    image: "Project image src",
+    description: "Project description",
+    links: {
+      github: "Project github link",
+      website: "Project website link",
+    },
   },
 ];
