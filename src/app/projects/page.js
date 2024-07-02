@@ -1,4 +1,5 @@
-import ProjectContainer from "../_UIcomponents/ProjectContainer";
+import ProjectCard from "../_UIcomponents/ProjectCard";
+import { projectsData } from "@/data";
 
 function page() {
   return (
@@ -15,7 +16,15 @@ function page() {
           </p>
         </div>
         <div className="flex flex-col gap-4">
-          <ProjectContainer />
+          <div className="flex justify-center items-center">
+            <div className="carousel rounded-box w-[70vw] max-w-[1260px] space-x-4 p-4 gap-2 sm:gap-9 ">
+              {projectsData.map((project, index) => (
+                <div key={index} className="carousel-item snap-start  ">
+                  <ProjectCard project={project} />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </main>
     </div>
