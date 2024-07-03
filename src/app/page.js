@@ -1,118 +1,91 @@
-import Image from "next/image";
-import Navbar from "./_UIcomponents/Navbar";
-import Footer from "./_UIcomponents/Footer";
+import { homepageData } from "@/data";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <button className="btn btn-primary mb-[30px]">Hello from daisyUI! to nerds of tpc-maintainers , please work together on this plzzz</button>
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-          <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex min-h-screen flex-col items-center justify-between py-24">
+      <div className="flex-col w-[100%] justify-center align-middle py-[5%]">
+        <div className="flex-col justify-center align-middle text-[#fff]">
+          <p className="flex justify-center align-middle font-medium text-[6.5vw] md:text-[3.25rem] xl:text-[3.75vw]">
+            Talk is Cheap,
+          </p>
+          <p className="flex justify-center align-middle font-medium text-[6.5vw] md:text-[3.25rem] xl:text-[3.75vw]">
+            Show me the <span className="green-gradient-text pl-2">Code</span>.
+          </p>
+        </div>
+        <div className="flex-col justify-center align-middle py-5">
+          <p className="text-center w-[80%] md:w-[40rem] xl:w-[45%] flex justify-center mx-auto text-[2.5vw] md:text-[1.25rem] xl:text-[1.4vw]">
+            {"<p>An open coding community where you can explore, collaborate, and engage with friends on various coding activities and projects.</p>  "}
+          </p>
+        </div>
+        <div className="flex-col justify-center align-middle py-5">
+          <p className="text-center w-[80%] md:w-[40rem] xl:w-[45%] flex justify-center mx-auto text-[2.5vw] md:text-[1.25rem] xl:text-[1.4vw]">
+            <span className="text-[#FF8A00]">if</span>(youWantToLearn == <span className="text-[#5F95FF] pl-1">true</span>) click();
+          </p>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="flex-col w-[100%] justify-center align-middle py-[5%]">
+        <p className="flex justify-center align-middle font-medium text-[6.5vw] md:text-[3.25rem] xl:text-[3.75vw] green-gradient-text">
+          About
+        </p>
+        <div className="flex justify-center align-middle gap-10 text-[#fff] mx-auto w-[80%] xl:w-[100%] py-[3%] flex-wrap">
+          {
+            Array.from(homepageData.about).map((data, index) => {
+              return (
+                <div key={index} className="flex-col justify-center align-middle py-4 sm:py-8 px-12 sm:px-20 bg-[#1A1A1A] rounded-xl">
+                  <img src={data.ImageSRC.src} alt={data.title} className="w-[75px] md:w-[7.5vw] 2xl:w-[8rem] 2xl:h-[8rem] mx-auto"/>
+                  <p className="text-[#fff] text-center flex justify-center mx-auto text-[2.5vw] md:text-[1.25rem] xl:text-[1.4vw] pt-5">
+                    {data.title}
+                  </p>
+                </div>
+              );
+            })
+          }
+        </div>
+        <div className="flex-col justify-center align-middle text-[#fff] mx-auto w-[100%] pb-[5%] flex-wrap">
+          <p className="text-center w-[80%] flex justify-center mx-auto text-[2.5vw] md:text-[1.25rem] xl:text-[1.4vw] py-10">
+            Bitbyte-TPC is a peer-learning community filled with tech-enthusiasts just like YOU! We intend to keep your interest kindled with regular thought-provoking sessions on Competitive coding , web, app, and game development, open source contributions, AI and ML (basically anything and everything that involves coding). aim to help students and as a community we want to grow as much as possible in many domains of coding and development, be it Competitive Programming, Android, Web, Open Source, AI/ML, Ethical Hacking.
+          </p>
+          <p className="text-center w-[80%] flex justify-center mx-auto text-[2.5vw] md:text-[1.25rem] xl:text-[1.4vw]">
+            You also get a chance to exhibit your skills and win prizes in events like Jamboree, NewBie, Commix and many more organised every now and then.
+          </p>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div></div>
+      <div className="flex-col w-[80%] justify-center align-middle py-[5%]">
+          {
+            Array.from(homepageData.details).map((data, index) => {
+              return (
+                <div key={index} className="flex justify-center align-middle py-5 md:py-10">
+                  <div className="flex-col justify-center align-middle">
+                    <p className="flex justify-start align-middle mx-auto font-medium text-[6.5vw] lg:text-[3.5rem] xl:text-[3.25vw] text-[#fff]">
+                      {data.title}
+                    </p>
+                    {
+                      Array.from(data.desc).map((detail, index) => {
+                        return (
+                          <p key={index} className="text-left flex justify-start mx-auto text-[2.5vw] md:text-[1.25rem] xl:text-[1.65vw] leading-[2.5vw] md:leading-7 xl:leading-9">
+                            {detail}
+                          </p>
+                        );
+                      })
+                    }
+                  </div>
+                  {
+                    data.image && (
+                      <div className="flex justify-center align-middle pl-4 w-[40rem] md:w-[150%]">
+                        <img src={data.image.src} alt={data.title} className="w-[40rem] md:w-[22rem] xl:w-[28rem] mx-auto"/>
+                      </div>
+                    )
+                  }
+                </div>
+              );
+            })
+          }
       </div>
     </main>
     </>
   );
 }
+
+export default Home;
