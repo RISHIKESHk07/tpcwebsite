@@ -24,7 +24,7 @@ const ProjectCard = ({ project }) => {
         />
       </div>
       {modal && (
-        <ProjectContainer project={project} modal={modal} setModal={setModal}/>
+        <ProjectContainer project={project} modal={modal} setModal={setModal} />
       )}
     </>
   );

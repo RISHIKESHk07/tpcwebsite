@@ -3,8 +3,8 @@ import { projectsData } from "@/data";
 
 function page() {
   return (
-    <div className="min-h-screen mx-auto">
-      <main className="min-h-screen w-full py-6">
+    <div className="mx-auto">
+      <main className=" w-full py-6">
         <div className="flex justify-center items-center flex-col gap-2 mb-12">
           <h1 className="text-4xl md:text-6xl font-semibold text-center">
             Our<span className="green-gradient-text">Projects</span>
