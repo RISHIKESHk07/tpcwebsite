@@ -1,3 +1,9 @@
+import Pencil from "../../public/Pencil.svg";
+import Group from "../../public/Group.svg";
+import Graph from "../../public/Graph.svg";
+import Rocket from "../../public/Rocket.svg";
+import tempPic from "../../public/Rectangle.svg";
+
 /* 
   Structure of teamsData: [
     teamName: "Name of the wing",
@@ -577,6 +583,53 @@ export const teamsData = [
   },
 ];
 
+
+export const homepageData = {
+  about:[
+    {
+      title: "Design",
+      ImageSRC: Pencil,
+    },
+    {
+      title: "Develop",
+      ImageSRC: Group,
+    },
+    {
+      title: "Test",
+      ImageSRC: Graph,
+    },
+    {
+      title: "Deploy",
+      ImageSRC: Rocket,
+    },
+  ],
+  details:[
+    {
+      title: "Why Us",
+      desc: [
+        "When you need advice regarding a fellowship, who is better equipped than someone who cracked it themselves\?",
+        "We are a team of skilled developers who have made it to GSoC, MLH and other prestigious programs, and top level competitive coders who have achieved ranks in ICPC, Google Hashcode, CodeJam and FaceBook HackerCup.", 
+        "A strong and supportive alumni network which will help you get a career boost.",
+      ],
+      image: "",
+    },
+    {
+      title: "Mission",
+      desc: [
+        "We, including students from freshman year to final year, aim to create a thriving coding environment for developers like you to ensure community learning.",
+      ],
+      image: tempPic,
+    },
+    {
+      title: "Vision",
+      desc: [
+        "We focus on covering a wide spectrum of technologies to constantly expand the scope of the club so that each one of you feels included.",
+      ],
+      image: tempPic,
+    },
+  ]
+}
+
 export const projectsData = [
   {
     title: "Project 1",
@@ -659,3 +712,4 @@ export const projectsData = [
     },
   },
 ];
+
