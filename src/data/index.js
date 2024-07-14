@@ -713,3 +713,215 @@ export const projectsData = [
   },
 ];
 
+export const AlumniData = [
+  {
+    "name": "Sagar Ranglani",
+    "position": "Coordinator (2007-08)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Arpit Garg",
+    "position": "Coordinator (2015-16)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Sachin Kukreja",
+    "position": "Co-Coordinator (2015-16)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Saurabh Joshi",
+    "position": "Coordinator (2016-17)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Adarsh Singh",
+    "position": "Co-Coordinator (2016-17)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Anuraag Singh",
+    "position": "Coordinator (2017-18), Co-Coordinator (2016-17)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Nakul Arya",
+    "position": "Coordinator (2017-18)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Arpan Tarkas",
+    "position": "Coordinator (2018-19), Co-Coordinator (2017-18)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Anuj Singh",
+    "position": "Co-Coordinator (2018-19)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Shivansh Dhiman",
+    "position": "Co-Coordinator (2018-19)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Anshuman Sharma",
+    "position": "Co-Coordinator (2018-19)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Ajwad Shaikh",
+    "position": "Coordinator (2019-20)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Pranav Khiste",
+    "position": "Co-Coordinator (2019-20)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Shrey Goel",
+    "position": "Co-Coordinator (2019-20)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Priyansh Garg",
+    "position": "Coordinator (2020-22)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Manan Jethwani",
+    "position": "Co-Coordinator (2020-21)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Taara Sinh Aatrey",
+    "position": "Co-Coordinator (2020-21)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Himanshu Aggarwal",
+    "position": "Co-Coordinator (2021-22)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Aksh Bansal",
+    "position": "Co-Coordinator (2021-22)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Priyansh Mehta",
+    "position": "Co-Coordinator (2022-23)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  },
+  {
+    "name": "Shashwat Gupta",
+    "position": "Coordinator (2022-23)",
+    "links": {
+      "linkedin": "#",
+      "email": "#",
+      "github": "#"
+    },
+    "imageUrl": "/"
+  }
+];
