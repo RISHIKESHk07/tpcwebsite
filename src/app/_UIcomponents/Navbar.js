@@ -58,11 +58,15 @@ const Navbar = () => {
 				</div>
 
 				<div className="sm:hidden w-full flex justify-between items-center px-5 py-4">
-					<Link href="/">
+					<Link href="/" className={`${
+							isMenuOpen ? "hidden" : "block"
+						}`}>
 						<Image src={tpcLogo} alt="TPC Logo" priority />
 					</Link>
 					<button
-						className="text-[#fff] text-4xl"
+						className={`${
+							isMenuOpen ? "hidden" : "block" 
+						} text-[#fff] text-4xl`}
 						onClick={() => setIsMenuOpen(!isMenuOpen)}
 					>
 						<FontAwesomeIcon icon={isMenuOpen ? faXmark : faBars} />
@@ -70,23 +74,36 @@ const Navbar = () => {
 					<div
 						className={`${
 							isMenuOpen ? "block" : "hidden"
-						} absolute z-[2] top-20 bottom-0 left-0 right-0 sm:hidden w-full`}
-					>
-						<div className="flex flex-col space-y-4 text-white font-medium py-8 px-4 bg-black">
-							<NavItem
-								key="Home"
-								label="Home"
-								href="/"
-								toggleMenu={() => setIsMenuOpen(false)}
-							/>
-							{navigationItems.map(({ label, href }) => (
+						} inset-0 fixed z-[9999] sm:hidden h-full w-full`}
+					>	
+						<div className="absolute top-0 bottom-0 left-0 right-0">
+							<div className="bg-[#000] sm:hidden w-full flex justify-between items-center px-9 py-8">
+								<Link href="/" onClick={() => setIsMenuOpen(false)}>
+									<Image src={tpcLogo} alt="TPC Logo" priority />
+								</Link>
+								<button
+									className="text-[#fff] text-4xl"
+									onClick={() => setIsMenuOpen(!isMenuOpen)}
+								>
+									<FontAwesomeIcon icon={isMenuOpen ? faXmark : faBars} />
+								</button>
+							</div>
+							<div className="flex flex-col h-full space-y-4 text-white font-medium px-4 bg-black">
 								<NavItem
-									key={label}
-									label={label}
-									href={href}
+									key="Home"
+									label="Home"
+									href="/"
 									toggleMenu={() => setIsMenuOpen(false)}
 								/>
-							))}
+								{navigationItems.map(({ label, href }) => (
+									<NavItem
+										key={label}
+										label={label}
+										href={href}
+										toggleMenu={() => setIsMenuOpen(false)}
+									/>
+								))}
+							</div>
 						</div>
 					</div>
 				</div>
