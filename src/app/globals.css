@@ -3,23 +3,58 @@
 @tailwind utilities;
 
 @layer base {
-  html,
-  body {
-    @apply bg-black;
-  }
+    html,
+    body {
+        @apply bg-black;
+    }
 }
 
 .green-gradient-text {
-  background: linear-gradient(to bottom right, #3CFF5B -16.22%, #2FCDFF 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(to bottom right, #3cff5b -16.22%, #2fcdff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hide-scrollbar {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 .hide-scrollbar::-webkit-scrollbar {
-  display: none;
+    display: none;
+}
+
+.card-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.blob {
+    filter: blur(40px);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: rgba(60, 255, 91, 0.3);
+    transition: all 300ms ease-in-out;
+}
+
+.fakeblob {
+    display: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
