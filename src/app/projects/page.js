@@ -8,7 +8,7 @@ import Image from "next/image";
 import leftarrow from "../../../public/left_arrow.svg";
 import rightarrow from "../../../public/right_arrow.svg";
 
-const Carousel = () => {
+const page = () => {
   const carouselRef = useRef(null);
 
   const handleScroll = (direction) => {
@@ -83,4 +83,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default page;
