@@ -1,10 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+import Image from "next/image";
 import {
 	faGithub,
 	faInstagram,
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import icon from "../../../public/icon.svg";
+
 
 const Footer = () => {
 	return (
@@ -34,6 +38,10 @@ const Footer = () => {
 				>
 					<FontAwesomeIcon icon={faGithub} className="h-6 w-6 text-white" />
 				</a>
+					<Link href="/" passHref className="relative bottom-2 right-3 h-10 w-10 ">
+          
+						<Image src={icon} />
+					</Link>
 			</div>
 		</div>
 	);
