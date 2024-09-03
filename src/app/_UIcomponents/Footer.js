@@ -38,10 +38,13 @@ const Footer = () => {
 				>
 					<FontAwesomeIcon icon={faGithub} className="h-6 w-6 text-white" />
 				</a>
-					<Link href="/" passHref className="relative bottom-2 right-3 h-10 w-10 ">
-          
-						<Image src={icon} />
-					</Link>
+				<Link 
+					href="https://linktr.ee/theprogclub" 
+					target="_blank" 
+					className="relative bottom-2 right-3 h-10 w-10 "
+				>
+					<Image src={icon} />
+				</Link>
 			</div>
 		</div>
 	);
