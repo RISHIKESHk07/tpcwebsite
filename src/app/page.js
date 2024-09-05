@@ -78,21 +78,24 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="flex-col w-[80%] justify-center align-middle py-[5%] space-y-12">
-                    <div className="w-full lg:pl-24 flex justify-around">
-                        <div className="size-16 lg:size-28 bg-slate-800 rounded-full lg:mt-8 lg:ml-24"></div>
-                        <div className="size-16 lg:size-28 bg-slate-800 rounded-full lg:-mt-6"></div>
-                        <div className="size-16 lg:size-28 bg-slate-800 rounded-full lg:-ml-20 lg:mt-12"></div>
+                <div className="w-full flex justify-center gap-32 items-center">
+                    <div className="flex justify-center items-center relative">
+                        <div className="flex justify-center items-center max-w-lg gap-40 flex-wrap animate-rotate">
+                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
+                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
+                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
+                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
+                        </div>
+                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
                     </div>
-                    <div className="w-full flex justify-between lg:pl-16">
-                        <div className="size-16 lg:size-28 bg-slate-800 rounded-full lg:-mr-8"></div>
-                        <div className="size-16 lg:size-28 bg-slate-800 rounded-full lg:-ml-16"></div>
-                        <div className="size-16 lg:size-28 bg-slate-800 rounded-full lg:mt-4"></div>
-                    </div>
-                    <div className="w-full flex justify-around lg:pl-8">
-                        <div className="size-16 lg:size-28 bg-slate-800 rounded-full lg:-mt-12 lg:ml-24"></div>
-                        <div className="size-16 lg:size-28 bg-slate-800 rounded-full lg:mt-8 lg:-ml-16"></div>
-                        <div className="size-16 lg:size-28 bg-slate-800 rounded-full lg:-ml-28"></div>
+                    <div className="flex justify-center items-center relative">
+                        <div className="flex justify-center items-center max-w-lg gap-40 flex-wrap animate-rotate">
+                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
+                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
+                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
+                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
+                        </div>
+                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
                     </div>
                 </div>
                 <div className="flex-col w-[80%] justify-center align-middle py-[5%]">

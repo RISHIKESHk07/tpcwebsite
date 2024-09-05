@@ -58,3 +58,12 @@
     height: 200px;
     border-radius: 50%;
 }
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.animate-rotate {
+    animation: rotate 10s linear infinite;
+}
