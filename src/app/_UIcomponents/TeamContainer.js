@@ -105,7 +105,7 @@ const TeamContainer = ({ title }) => {
                 <p className="text-4xl max-sm:text-2xl text-center font-semibold">
                     {title}
                 </p>
-                <CustomCarousel>
+                <CustomCarousel showScrollbar={false}>
                     {mockCards.map((card, index) => {
                         return (
                             <div key={index} className="snap-center">
@@ -150,7 +150,7 @@ const ModalContent = ({ title }) => {
                 {title}
             </h3>
             {title === "Office Bearers" ? (
-                <CustomCarousel>
+                <CustomCarousel showScrollbar={true}>
                     {allCards.map((card, index) => {
                         return (
                             <div key={index} className="snap-center">
