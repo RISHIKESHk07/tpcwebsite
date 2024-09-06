@@ -1,21 +1,24 @@
 "use client"
 
-const PastEvent = () => {
+import { pastEvents, ourEvents } from "@/data"
+
+const PastEvent = ({ data }) => {
     return (
-        <div className="bg-[#1a1a1a] flex-shrink-0 h-[180px] sm:h-[70vh] w-[128px] sm:w-[50vh] rounded-xl sm:rounded-[24px]"></div>
+        <div className="bg-[#1a1a1a] flex-shrink-0 h-[180px] sm:h-[70vh] w-[128px] sm:w-[50vh] rounded-xl sm:rounded-[24px]">
+            <h1 className="text-center p-2 text-3xl font-bold">{data.title}</h1>
+        </div>
     )
 }
 
-const OurEvent = () => {
+const OurEvent = ({ data }) => {
     return (
-        <div className="bg-[#1a1a1a] flex-shrink-0 h-[84px] w-[84px] sm:h-[300px] sm:w-[300px] rounded-full"></div>
+        <div className="bg-[#1a1a1a] flex-shrink-0 h-[84px] w-[84px] sm:h-[300px] sm:w-[300px] rounded-full flex justify-center items-center">
+            {data.title}
+        </div>
     )
 }
 
 function page() {
-    const pastEvents = [1, 2, 3, 4, 5]
-    const ourEvents = [1, 2, 3, 4, 5, 6, 7]
-
     return (
         <div className="min-h-full w-full mx-auto">
             <main className="bg-[#000]">
@@ -40,7 +43,7 @@ function page() {
                     </p>
                     <div className="flex gap-3 sm:gap-10 w-full overflow-x-scroll hide-scrollbar">
                         {pastEvents.map((event) => (
-                            <PastEvent key={event} />
+                            <PastEvent key={event} data={event} />
                         ))}
                     </div>
                 </div>
@@ -51,7 +54,7 @@ function page() {
                     </p>
                     <div className="flex gap-3 sm:gap-10 overflow-x-scroll hide-scrollbar">
                         {ourEvents.map((event) => (
-                            <OurEvent key={event} />
+                            <OurEvent key={event.title} data={event} />
                         ))}
                     </div>
                 </div>
