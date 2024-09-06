@@ -18,7 +18,7 @@ const BatchContainer = ({ teamName, batchName }) => {
   return (
     <div className="flex flex-col items-center gap-3">
       <h4 className="font-semibold text-lg text-slate-300">{batchName}</h4>
-      <CustomCarousel>
+      <CustomCarousel showScrollbar={true}>
         {batch.batchMembers.map((member, index) => (
           <div key={index} className="snap-center">
             <TicketCard {...member} />
