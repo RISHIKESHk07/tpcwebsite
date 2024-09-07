@@ -6,7 +6,7 @@ import BatchContainer from "./BatchContainer"
 import TicketCard from "./TicketCard"
 import CustomCarousel from "./CustomCarousel"
 
-const TeamContainer = ({ title }) => {
+const TeamContainer = ({ title, isActive }) => {
     const [popUp, setpopUp] = useState(false)
     const modalRef = useRef(null)
 
@@ -48,20 +48,17 @@ const TeamContainer = ({ title }) => {
         const container = containerRef.current
 
         const handleMouseMove = (ev) => {
-            console.log(ev)
             const blob = container.querySelector(".blob")
             const fblob = container.querySelector(".fakeblob")
             const rec = container.getBoundingClientRect()
             blob.style.opacity = "1"
 
-            console.log(rec)
-            console.log(ev.clientX, ev.clientY)
-
             if (
                 ev.clientX < rec.left ||
                 ev.clientX > rec.right ||
                 ev.clientY < rec.top ||
-                ev.clientY > rec.bottom
+                ev.clientY > rec.bottom ||
+                !isActive
             ) {
                 blob.style.opacity = "0"
             } else {
@@ -100,7 +97,7 @@ const TeamContainer = ({ title }) => {
                 className="bg-card bg-[#1a1a1a] absolute inset-0 flex justify-center items-center flex-col gap-8 max-sm:mx-6 max-w-[1252px] mx-auto rounded-[20px] p-4 cursor-pointer card-container"
                 onClick={() => setpopUp(true)}
             >
-                <div className="blob"></div>
+                <div className="blob -z-10"></div>
                 <div className="fakeblob"></div>
                 <p className="text-4xl max-sm:text-2xl text-center font-semibold">
                     {title}
@@ -108,7 +105,10 @@ const TeamContainer = ({ title }) => {
                 <CustomCarousel showScrollbar={false}>
                     {mockCards.map((card, index) => {
                         return (
-                            <div key={index} className="snap-center">
+                            <div
+                                key={index}
+                                className="snap-center hover:scale-105 duration-300 z-10"
+                            >
                                 <TicketCard {...card} />
                             </div>
                         )
