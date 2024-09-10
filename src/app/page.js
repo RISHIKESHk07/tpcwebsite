@@ -80,22 +80,81 @@ const Home = () => {
 
                 <div className="w-full flex justify-center gap-32 items-center">
                     <div className="flex justify-center items-center relative">
-                        <div className="flex justify-center items-center max-w-lg gap-40 flex-wrap animate-rotate">
-                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
-                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
-                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
-                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
+                        <div className="flex justify-center items-center max-w-lg gap-40 flex-wrap animate-rotate flex-col lg:flex-row">
+                            <div className="rounded-full bg-slate-800 size-24 border flex border-white/50 hover:scale-110 duration-300">
+                                {" "}
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original-wordmark.svg"
+                                    className="size-20 animate-rotate animate-reverse m-auto"
+                                />
+                            </div>
+                            <div className="rounded-full bg-slate-800 size-24 border flex border-white/50 hover:scale-110 duration-300">
+                                {" "}
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                                    className="size-20 animate-rotate animate-reverse m-auto"
+                                />
+                            </div>
+                            <div className="rounded-full bg-slate-800 size-24 border flex border-white/50 hover:scale-110 duration-300">
+                                {" "}
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                                    className="size-16 animate-rotate animate-reverse m-auto"
+                                />
+                            </div>
+                            <div className="rounded-full bg-slate-800 size-24 border flex border-white/50 hover:scale-110 duration-300">
+                                {" "}
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
+                                    className="size-20 animate-rotate animate-reverse m-auto"
+                                />
+                            </div>
                         </div>
-                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
+                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300 flex">
+                            {" "}
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                                className="size-20 m-auto"
+                            />
+                        </div>
                     </div>
                     <div className="flex justify-center items-center relative">
                         <div className="flex justify-center items-center max-w-lg gap-40 flex-wrap animate-rotate">
-                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
-                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
-                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
-                            <div className="rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
+                            <div className="rounded-full flex bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300">
+                                {" "}
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg"
+                                    className="size-20 m-auto animate-rotate animate-reverse"
+                                />
+                            </div>
+                            <div className="rounded-full flex bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300">
+                                {" "}
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                                    className="size-20 m-auto animate-rotate animate-reverse"
+                                />
+                            </div>
+                            <div className="rounded-full flex bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300">
+                                {" "}
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                                    className="size-20 m-auto animate-rotate animate-reverse"
+                                />
+                            </div>
+                            <div className="rounded-full flex bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300">
+                                {" "}
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
+                                    className="size-20 m-auto animate-rotate animate-reverse"
+                                />
+                            </div>
                         </div>
-                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300"></div>
+                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-slate-800 size-24 border border-white/50 hover:scale-110 duration-300 flex">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
+                                className="size-20 m-auto"
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className="flex-col w-[80%] justify-center align-middle py-[5%]">

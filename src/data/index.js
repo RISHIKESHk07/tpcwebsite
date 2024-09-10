@@ -126,40 +126,158 @@ export const teamsData = [
                         links: "Test links",
                     },
                     {
-                        name: "Eeshan",
-                        position: "Test position",
-                        ImageSRC: "Test image src",
-                        links: "Test links",
-                    },
-                    {
-                        name: "Samaksh",
-                        position: "Test position",
-                        ImageSRC: "Test image src",
-                        links: "Test links",
-                    },
-                    {
-                        name: "Parth",
-                        position: "Test position",
-                        ImageSRC: "Test image src",
-                        links: "Test links",
-                    },
-                    {
-                        name: "Kushagra",
-                        position: "Test position",
-                        ImageSRC: "Test image src",
-                        links: "Test links",
-                    },
-                    {
-                        name: "Akash Paloju",
-                        position: "Test position",
-                        ImageSRC: "Test image src",
-                        links: "Test links",
-                    },
-                    {
                         name: "Pratik Solanki",
-                        position: "Test position",
-                        ImageSRC: "Test image src",
-                        links: "Test links",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "pratik.jpeg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/pratik-solanki-a140a7257/",
+                        githubProfileUrl: "https://github.com/Pratik2026",
+                        email: "pratiksolanki2026@gmail.com",
+                    },
+                    {
+                        name: "Vedant Jain",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "vedant.jpeg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/vedant-jain-4733a4250/",
+                        githubProfileUrl: "https://github.com/jainvedant392",
+                        email: "jainvedant392@gmail.com",
+                    },
+                    {
+                        name: "Eshaan Modi",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "eshaan.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "www.linkedin.com/in/eshaan-modi-a9a602253",
+                        githubProfileUrl: "https://github.com/NightFury742",
+                        email: "eshaan122@gmail.com",
+                    },
+                    {
+                        name: "Shraman Paul",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "ShramanPaul.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/shraman-paul-15ba04257/",
+                        githubProfileUrl: "https://github.com/shramanpaul",
+                        email: "22bcs229@iiitdmj.ac.in",
+                    },
+                    {
+                        name: "Neyati",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "neyati.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/neyati-iiit/",
+                        githubProfileUrl: "https://github.com/Doraemon012",
+                        email: "neyati28@gmail.com",
+                    },
+                    {
+                        name: "Aditya Ghai",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "Aditya.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            " www.linkedin.com/in/aditya-ghai-71326124a",
+                        githubProfileUrl: "https://github.com/adityaghai07 ",
+                        email: "22bcs011@iiitdmj.ac.in ",
+                    },
+                    {
+                        name: "Shreyans Kataria",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "shreyans.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/shreyans-katariya-501489260/ ",
+                        githubProfileUrl: "https://github.com/Shreyans2004 ",
+                        email: "22bcs231@iiitdmj.ac.in ",
+                    },
+                    {
+                        name: "Joyee Biswas",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "joyee.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            " https://www.linkedin.com/in/joyee-biswas-807b53258",
+                        githubProfileUrl: "https://github.com/Joyee2004 ",
+                        email: "22bcs116@iiitdmj.ac.in ",
+                    },
+                    {
+                        name: "Dhruv Parmar",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "dhruv.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/dhruv-parmar-61b31226b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                        githubProfileUrl: "https://github.com/REC-1104",
+                        email: "dhruvparmar110404@gmail.com",
+                    },
+                    {
+                        name: "Shivansh Fulper",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "Shivansh.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/shivansh-fulper-463968223",
+                        githubProfileUrl: " https://github.com/Pin4sf ",
+                        email: " 22bsm054@iiitdmj.ac.in ",
+                    },
+                    {
+                        name: "Agrim Gupta",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "agrim.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/agrim-gupta-203570265",
+                        githubProfileUrl: " https://github.com/Agrim2112",
+                        email: "22bcs016@iiitdmj.ac.in",
+                    },
+                    {
+                        name: "Aditya kumar Gupta",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "Aditya_Gupta.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/aditya-kumar-gupta-b52a9426b",
+                        githubProfileUrl: "https://github.com/Adi8712",
+                        email: "22bcs012@iiitdmj.ac.in",
+                    },
+                    {
+                        name: "Akshay Behl",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "akshay.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/akshay-behl-450661258/",
+                        githubProfileUrl: "https://github.com/Captain-T2004",
+                        email: "akshaybehl231@gmail.com",
+                    },
+                    {
+                        name: "Prince Bhujethia",
+                        position: "dev wing member",
+                        batch: 2022,
+                        imageSrc: "prince.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/prince-bujethia-60850a1a0/",
+                        githubProfileUrl: "https://github.com/PrinceBujethia",
+                        email: "22bc200@iiitdmj.ac.in",
                     },
                 ],
             },
@@ -173,40 +291,59 @@ export const teamsData = [
                         links: "Test links",
                     },
                     {
-                        name: "Eeshan",
-                        position: "Test position",
-                        ImageSRC: "Test image src",
-                        links: "Test links",
+                        name: "Aryan Pandey",
+                        position: "dev wing member",
+                        batch: 2021,
+                        imageSrc: "aryan_pandey.jpeg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/aryan1113/",
+                        githubProfileUrl: "https://github.com/aryan1113",
+                        email: "21bec026@iiitdmj.ac.in",
                     },
                     {
-                        name: "Samaksh",
-                        position: "Test position",
-                        ImageSRC: "Test image src",
-                        links: "Test links",
+                        name: "Sambhav Gupta",
+                        position: "dev wing member",
+                        batch: 2021,
+                        imageSrc: "sambhav.jpeg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/sambhavgupta0705/",
+                        githubProfileUrl: "www.github.com/sambhavgupta0705",
+                        email: "sambhavwork75@gmail.com",
                     },
                     {
-                        name: "Parth",
-                        position: "Test position",
-                        ImageSRC: "Test image src",
-                        links: "Test links",
+                        name: "Aryan Sharma",
+                        position: "dev wing member",
+                        batch: 2021,
+                        imageSrc: "Aryan_Sharma.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/aryan-sharma-3035b7226/",
+                        githubProfileUrl: "https://github.com/salted0dreams",
+                        email: "@gmail.com",
                     },
                     {
-                        name: "Kushagra",
-                        position: "Test position",
-                        ImageSRC: "Test image src",
-                        links: "Test links",
+                        name: "Raman Chaudhary",
+                        position: "dev wing member",
+                        batch: 2021,
+                        imageSrc: "Raman_Chaudhary.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/chinmay-r-joshi/",
+                        githubProfileUrl: "https://github.com/ChaudharyRaman",
+                        email: "@gmail.com",
                     },
                     {
-                        name: "Akash Paloju",
-                        position: "Test position",
-                        ImageSRC: "Test image src",
-                        links: "Test links",
-                    },
-                    {
-                        name: "Pratik Solanki",
-                        position: "Test position",
-                        ImageSRC: "Test image src",
-                        links: "Test links",
+                        name: "Chinmay Joshi",
+                        position: "dev wing member",
+                        batch: 2021,
+                        imageSrc: "chinmay_joshi.jpg",
+                        links: [],
+                        linkedInProfileUrl:
+                            "https://www.linkedin.com/in/raman-chaudhary-222914229/",
+                        githubProfileUrl: "https://github.com/",
+                        email: "@gmail.com",
                     },
                 ],
             },
@@ -728,6 +865,7 @@ export const AlumniData = [
         position: "Coordinator (2007-08)",
         imageUrl: "Sagar.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/sagarranglani/",
             githubProfileUrl: "",
             email: "",
@@ -738,6 +876,7 @@ export const AlumniData = [
         position: "Coordinator (2015-16)",
         imageUrl: "Arpit.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/arpitgarg96/",
             githubProfileUrl: "",
             email: "",
@@ -748,6 +887,7 @@ export const AlumniData = [
         position: "Co-Coordinator (2015-16)",
         imageUrl: "Sachin.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl:
                 "https://www.linkedin.com/in/sachin-kukreja-12b318106/",
             githubProfileUrl: "",
@@ -759,6 +899,7 @@ export const AlumniData = [
         position: "Coordinator (2016-17)",
         imageUrl: "Saurabh.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/apptica",
             githubProfileUrl: "https://github.com/Apptica",
             email: "",
@@ -769,6 +910,7 @@ export const AlumniData = [
         position: "Co-Coordinator (2016-17)",
         imageUrl: "Adarsh.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl:
                 "https://www.linkedin.com/in/adarsh-singh-036985126",
             githubProfileUrl: "",
@@ -781,6 +923,7 @@ export const AlumniData = [
         description2: "Co-Coordinator (2016-17)",
         imageUrl: "Anuraag.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl:
                 "https://www.linkedin.com/in/anuraag-singh-231661113",
             githubProfileUrl: "https://www.github.com/anuraagheisenberg",
@@ -792,6 +935,7 @@ export const AlumniData = [
         position: "Coordinator (2017-18)",
         imageUrl: "Nakul.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/aryanakul/",
             githubProfileUrl: "",
             email: "",
@@ -803,6 +947,7 @@ export const AlumniData = [
         description2: "Co-Coordinator (2017-18)",
         imageUrl: "Arpan.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/arpantarkas",
             githubProfileUrl: "https://github.com/arpantarkas",
             email: "",
@@ -813,6 +958,7 @@ export const AlumniData = [
         position: "Co-Coordinator (2018-19)",
         imageUrl: "avatar.png",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/chauhan176",
             githubProfileUrl: "",
             email: "",
@@ -823,6 +969,7 @@ export const AlumniData = [
         position: "Co-Coordinator (2018-19)",
         imageUrl: "Shivansh.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/shivansh-dhiman",
             githubProfileUrl: "https://github.com/shivansh1010",
             email: "",
@@ -833,6 +980,7 @@ export const AlumniData = [
         position: "Co-Coordinator (2018-19)",
         imageUrl: "Anshuman.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/-anshuman-sharma-",
             githubProfileUrl: "",
             email: "",
@@ -843,6 +991,7 @@ export const AlumniData = [
         position: "Coordinator (2019-20)",
         imageUrl: "Ajwad.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/ajwad-shaikh",
             githubProfileUrl: "https://www.github.com/ajwad-shaikh",
             email: "",
@@ -853,6 +1002,7 @@ export const AlumniData = [
         position: "Co-Coordinator (2019-20)",
         imageUrl: "Pranav.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl:
                 "https://www.linkedin.com/in/pranav-khiste-2a38a116a",
             githubProfileUrl: "",
@@ -864,6 +1014,7 @@ export const AlumniData = [
         position: "Co-Coordinator (2019-20)",
         imageUrl: "Shrey.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl:
                 "https://www.linkedin.com/in/shrey-goel-21492194",
             githubProfileUrl: "",
@@ -875,6 +1026,7 @@ export const AlumniData = [
         position: "Coordinator (2020-22)",
         imageUrl: "priyansh.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/priyansh3133/",
             githubProfileUrl: "https://github.com/garg3133",
             email: "",
@@ -885,6 +1037,7 @@ export const AlumniData = [
         position: "Co-Coordinator (2020-21)",
         imageUrl: "Manan.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/manan-jethwani",
             githubProfileUrl: "https://www.github.com/mananjethwani",
             email: "",
@@ -895,6 +1048,7 @@ export const AlumniData = [
         position: "Co-Coordinator (2020-21)",
         imageUrl: "Tara.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/aatrey07",
             githubProfileUrl: "https://github.com/Taara-Sinh-Aatrey",
             email: "taarasinh1@gmail.com",
@@ -905,6 +1059,7 @@ export const AlumniData = [
         position: "Co-Coordinator (2021-22)",
         imageUrl: "Himanshu.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/himanshu0923/",
             githubProfileUrl: "https://www.github.com/HimanShu0923",
             email: "",
@@ -915,6 +1070,7 @@ export const AlumniData = [
         position: "Co-Coordinator (2021-22)",
         imageUrl: "Aksh.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl:
                 "https://www.linkedin.com/in/aksh-bansal-0a1073200/",
             githubProfileUrl: "https://github.com/Aksh-Bansal-dev",
@@ -926,6 +1082,7 @@ export const AlumniData = [
         position: "Co-Coordinator (2022-23)",
         imageUrl: "PriyanshMehta.jpeg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/priyansh61",
             githubProfileUrl: "https://github.com/Priyansh61",
             email: "",
@@ -936,6 +1093,7 @@ export const AlumniData = [
         position: "Coordinator (2022-23)",
         imageUrl: "shashwat.jpg",
         links: {
+            links: [],
             linkedInProfileUrl: "https://www.linkedin.com/in/masterchief164",
             githubProfileUrl: "https://www.github.com/masterchief164",
             email: "shaswat2001.sg@gmail.com",
