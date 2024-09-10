@@ -67,3 +67,7 @@
 .animate-rotate {
     animation: rotate 10s linear infinite;
 }
+
+.animate-reverse {
+    animation-direction: reverse;
+}
