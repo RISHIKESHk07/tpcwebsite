@@ -71,3 +71,62 @@
 .animate-reverse {
     animation-direction: reverse;
 }
+/* AlumniCard-specific blob effect */
+.alumni-card {
+  --blob-size: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+
+.alumni-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.alumni-card .blob {
+  position: absolute;
+  width: var(--blob-size);
+  height: var(--blob-size);
+  left: calc(50% - calc(var(--blob-size) / 2));
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(60px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 200ms 200ms linear;
+}
+
+.alumni-card:hover .blob {
+  opacity: 1;
+}
+
+.alumni-card .fakeblob {
+  visibility: hidden;
+  z-index: -1;
+  height: 100%;
+}
+
+/* Transition and hover effects for AlumniCard */
+.alumni-card .social-link {
+  opacity: 0.5;
+  transition: opacity 300ms ease-in-out;
+}
+
+.alumni-card:hover .social-link {
+  opacity: 1;
+}
+
+.alumni-card .social-link:hover {
+  opacity: 0.8;
+  transition: opacity 200ms ease-in-out;
+}
+
+.alumni-card .inner {
+  backdrop-filter: blur(80px);
+  height: 100%;
+}
