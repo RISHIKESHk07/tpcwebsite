@@ -1187,7 +1187,7 @@ export const AlumniData = [
             email: "#",
             github: "#",
         },
-        imageUrl: "/",
+        imageUrl: "avatar.png",
     },
     {
         name: "Sagar Ranglani",
@@ -1466,6 +1466,7 @@ export const ourEvents = [
         title: "BSOC",
         subtitle: "The annual open-source program",
         thumb: "bsoclogo.jpg",
+        images:["bsoclogo.jpg"],
         web: "https://bitbytesummerofcode.netlify.app/",
         date: "May to July 2023",
         description:

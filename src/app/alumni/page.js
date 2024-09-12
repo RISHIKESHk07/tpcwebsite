@@ -17,7 +17,7 @@ function page() {
             }
           </p>
         </div>
-        <div className="flex gap-10 flex-wrap justify-center align-middle px-20 md:px-40 mx-auto">
+        <div className="flex gap-12 flex-wrap justify-center align-middle px-20 md:px-40 mx-auto">
           {
             AlumniData.map((alumni, index) => (
               <AlumniCard
