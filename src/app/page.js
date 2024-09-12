@@ -1,4 +1,5 @@
 import { homepageData } from "@/data"
+import Image from "next/image"
 
 const Home = () => {
     return (
@@ -182,11 +183,12 @@ const Home = () => {
                                     )}
                                 </div>
                                 {data.image && (
-                                    <div className="flex justify-center align-middle pl-4 w-[40rem] md:w-[150%]">
-                                        <img
-                                            src={data.image.src}
+                                    <div className="flex justify-center align-middle pl-4 border w-[40rem] md:w-[150%] relative bg-slate-900">
+                                        <Image
+                                            src={"/" + data.image}
                                             alt={data.title}
-                                            className="w-[40rem] md:w-[22rem] xl:w-[28rem] mx-auto"
+                                            fill
+                                            className="object-cover hover:m-2 duration-100"
                                         />
                                     </div>
                                 )}

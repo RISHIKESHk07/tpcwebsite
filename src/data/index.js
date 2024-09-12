@@ -126,6 +126,17 @@ export const teamsData = [
                 githubProfileUrl: "https://github.com/Pratik2026",
                 email: "pratiksolanki2026@gmail.com",
             },
+            {
+                name: "Vedant Jain",
+                position: "dev wing member",
+                batch: 2022,
+                imageSrc: "vedant.jpeg",
+                links: [],
+                linkedInProfileUrl:
+                    "https://www.linkedin.com/in/vedant-jain-4733a4250/",
+                githubProfileUrl: "https://github.com/jainvedant392",
+                email: "jainvedant392@gmail.com",
+            },
         ],
         batches: [
             // Array of batches to show in Modal
@@ -937,14 +948,14 @@ export const homepageData = {
             desc: [
                 "We, including students from freshman year to final year, aim to create a thriving coding environment for developers like you to ensure community learning.",
             ],
-            image: tempPic,
+            image: "home1.jpeg",
         },
         {
             title: "Vision",
             desc: [
                 "We focus on covering a wide spectrum of technologies to constantly expand the scope of the club so that each one of you feels included.",
             ],
-            image: tempPic,
+            image: "home2.jpeg",
         },
     ],
 }
@@ -1466,7 +1477,7 @@ export const ourEvents = [
         title: "BSOC",
         subtitle: "The annual open-source program",
         thumb: "bsoclogo.jpg",
-        images:["bsoclogo.jpg"],
+        images: ["bsoclogo.jpg"],
         web: "https://bitbytesummerofcode.netlify.app/",
         date: "May to July 2023",
         description:
