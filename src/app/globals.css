@@ -44,7 +44,7 @@
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background: rgba(60, 255, 91, 0.3);
+    background: linear-gradient(#3cff5c4a, #2fceff51);
     transition: all 300ms ease-in-out;
 }
 
