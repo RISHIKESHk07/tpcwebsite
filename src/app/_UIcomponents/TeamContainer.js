@@ -10,9 +10,8 @@ const TeamContainer = ({ title, isActive }) => {
     const [popUp, setpopUp] = useState(false)
     const modalRef = useRef(null)
 
-    const mockCards = teamsData.find(
-        (team) => team.teamName === title
-    )?.mockCards
+    const mockCards =
+        teamsData.find((team) => team.teamName === title)?.allCards ?? []
 
     // Close modal if clicking outside of it
     useEffect(() => {
@@ -43,24 +42,41 @@ const TeamContainer = ({ title, isActive }) => {
     }, [popUp])
 
     const containerRef = useRef(null)
+    const smallBoxRef = useRef([])
 
     useEffect(() => {
         const container = containerRef.current
+        const smallBoxes = smallBoxRef.current
 
         const handleMouseMove = (ev) => {
             const blob = container.querySelector(".blob")
-            const fblob = container.querySelector(".fakeblob")
             const rec = container.getBoundingClientRect()
             blob.style.opacity = "1"
 
-            if (
+            let isInsideSmallBox = false
+
+            smallBoxes.forEach((bx) => {
+                const smallRec = bx.getBoundingClientRect()
+                if (
+                    ev.clientX > smallRec.left &&
+                    ev.clientX < smallRec.right &&
+                    ev.clientY > smallRec.top &&
+                    ev.clientY < smallRec.bottom
+                ) {
+                    isInsideSmallBox = true
+                }
+            })
+
+            if (isInsideSmallBox) {
+                blob.style.opacity = "0" // Hide blob when inside small box
+            } else if (
                 ev.clientX < rec.left ||
                 ev.clientX > rec.right ||
                 ev.clientY < rec.top ||
                 ev.clientY > rec.bottom ||
                 !isActive
             ) {
-                blob.style.opacity = "0"
+                blob.style.opacity = "0" // Hide blob when outside container or not active
             } else {
                 blob.style.opacity = "1"
                 blob.animate(
@@ -68,7 +84,7 @@ const TeamContainer = ({ title, isActive }) => {
                         {
                             transform: `translate(${
                                 ev.clientX - rec.left - rec.width / 2 + 500
-                            }px,${
+                            }px, ${
                                 ev.clientY - rec.top - rec.height / 2 + 100
                             }px)`,
                         },
@@ -107,7 +123,8 @@ const TeamContainer = ({ title, isActive }) => {
                         return (
                             <div
                                 key={index}
-                                className="snap-center hover:scale-105 duration-300 z-10"
+                                className="snap-center hover:scale-105 duration-200 z-10"
+                                ref={(el) => (smallBoxRef.current[index] = el)}
                             >
                                 <TicketCard {...card} />
                             </div>
@@ -123,7 +140,7 @@ const TeamContainer = ({ title, isActive }) => {
             {popUp && (
                 <div
                     ref={modalRef}
-                    className={`bg-[#1a1a1a] inset-0 fixed my-12 rounded-3xl z-10 max-sm:mx-4 sm:mx-4 md:mx-10 overflow-y-auto`}
+                    className={`border border-white/50 bg-[#1a1a1a] inset-0 fixed my-12 rounded-3xl max-sm:mx-4 sm:mx-4 md:mx-10 overflow-y-auto z-50`}
                 >
                     <div>
                         <button
@@ -141,8 +158,10 @@ const TeamContainer = ({ title, isActive }) => {
 }
 
 const ModalContent = ({ title }) => {
-    const allCards = teamsData.find((team) => team.teamName === title)?.allCards
-    const batches = teamsData.find((team) => team.teamName === title)?.batches
+    const allCards =
+        teamsData.find((team) => team.teamName === title)?.allCards ?? []
+    const batches =
+        teamsData.find((team) => team.teamName === title)?.batches ?? []
 
     return (
         <div className="flex flex-col items-center gap-12 p-5">

@@ -28,12 +28,12 @@ function page() {
                             key={index}
                             onMouseOver={() => {
                                 setActive(index)
-                                console.log(index)
+                                console.log(active)
                             }}
                         >
                             <TeamContainer
                                 title={team.teamName}
-                                isActive={true}
+                                isActive={active}
                             />
                         </div>
                     ))}
