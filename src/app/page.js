@@ -12,7 +12,7 @@ const Home = () => {
                         </p>
                         <p className="flex justify-center align-middle font-medium text-[6.5vw] md:text-[3.25rem] xl:text-[3.75vw]">
                             Show me the{" "}
-                            <span className="green-gradient-text pl-2">
+                            <span className="hoverable rounded-full green-gradient-text pl-2">
                                 Code
                             </span>
                             .
@@ -43,7 +43,7 @@ const Home = () => {
                             return (
                                 <div
                                     key={index}
-                                    className="flex-col justify-center align-middle py-4 sm:py-8 px-12 sm:px-20 bg-[#1A1A1A] rounded-xl"
+                                    className="hoverable flex-col justify-center align-middle py-4 sm:py-8 px-12 sm:px-20 bg-[#1A1A1A] rounded-xl"
                                 >
                                     <img
                                         src={data.ImageSRC.src}
