@@ -4,12 +4,17 @@ import Linkdln from "../../../public/Linkdln.svg"
 import Github from "../../../public/Github.svg"
 import Email from "../../../public/Email.svg"
 
-function TicketCard({ name, position, ImageSRC, links }) {
+function TicketCard({ name, position, imageSrc, links }) {
     return (
         <div className="w-[287px] h-[388px] pl-[12px] pt-[12px] rounded-[20px] bg-[#333333] hover:bg-gradient-to-b hover:from-teal-600/10 hover:to-green-600/10">
-            <div className="w-[263px] h-[263px] bg-[#4D4D4D] rounded-[6.7px]">
+            <div className="w-[263px] h-[263px] bg-[#4D4D4D] rounded-[6.7px] overflow-hidden">
                 {/* here will have a image which we can fic once we got the images , use ImageSRC here */}
-                <Image src={Github} width={263} height={263} alt="test" />
+                <Image
+                    src={"/profiles/" + imageSrc}
+                    width={263}
+                    height={263}
+                    alt="test"
+                />
             </div>
             <p className="mt-[10px] text-white text-[20px] font-[500]">
                 {name}

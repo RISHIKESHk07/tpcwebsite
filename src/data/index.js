@@ -59,41 +59,29 @@ export const teamsData = [
         mockCards: [
             // Array of cards to show in Modal
             {
-                name: "Shashwat Gupta",
+                name: "Eshaan Modi",
                 position: "Coordinator",
-                ImageSRC: "Test image src",
+                imageSrc: "eshaan.jpg",
                 links: "Test links",
             },
             {
-                name: "Priyansh Mehta",
+                name: "Rishi Godre",
                 position: "Co-coordinator",
-                ImageSRC: "Test image src",
+                imageSrc: "Rishi.jpg",
                 links: "Test links",
             },
         ],
         allCards: [
             {
-                name: "Shashwat Gupta",
+                name: "Eshaan Modi",
                 position: "Coordinator",
-                ImageSRC: "Test image src",
+                imageSrc: "eshaan.jpg",
                 links: "Test links",
             },
             {
-                name: "Priyansh Mehta",
+                name: "Rishi Godre",
                 position: "Co-coordinator",
-                ImageSRC: "Test image src",
-                links: "Test links",
-            },
-            {
-                name: "Ramgopal",
-                position: "Nobody",
-                ImageSRC: "Test image src",
-                links: "Test links",
-            },
-            {
-                name: "Kaarti",
-                position: "Nobody",
-                ImageSRC: "Test image src",
+                imageSrc: "Rishi.jpg",
                 links: "Test links",
             },
         ],
@@ -1051,7 +1039,7 @@ export const projectlist = [
             "Streamlined college e-commerce: Simplifying merch buying and selling for students.",
         createdBy: "BitByte",
         links: { github: "https://github.com/bsoc-bitbyte/GetIt" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/get_it.png",
+        image: "/projects/get_it.png",
     },
     {
         title: "Fend",
@@ -1061,7 +1049,7 @@ export const projectlist = [
         createdBy:
             "Armin Patel, Prajjwal Kapoor, Varun Singh, Vansh Mittal, Aryan Pandey, Vaibhavi Bhosale",
         links: { github: "https://github.com/varun7singh/Fend" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/fend.jpg",
+        image: "/projects/fend.jpg",
     },
     {
         title: "Doc-AI",
@@ -1070,7 +1058,7 @@ export const projectlist = [
             "This project is a real-time document editor built using React and Quill.js. It allows multiple users to collaborate on a document in real-time, similar to Google Docs. Also we have integrated the OpenAI so that user can give prompt to AI and get the results to write a documents.",
         createdBy: "Vaishnav Deore, Priyansh Mehta, Tushit Shukla",
         links: { github: "https://github.com/Waishnav/Doc-AI" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/docai.png",
+        image: "/projects/docai.png",
     },
     {
         title: "Quix.ai",
@@ -1079,7 +1067,7 @@ export const projectlist = [
             "Quix.ai is an intelligent VSCode extension powered by AI, designed to revolutionize your coding experience. It seamlessly adds a layer of brilliance to your workflow by automating code comments, summarization and documentation.",
         createdBy: "Bhavik Agarwal",
         links: { github: "https://github.com/Bhavik-ag/Quix.ai" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/quix.jpg",
+        image: "/projects/quix.jpg",
     },
     {
         title: "Kairy",
@@ -1088,7 +1076,7 @@ export const projectlist = [
             "Kairy is intended to simplify your online experience by organizing everything in one location, allowing you to be more productive.",
         createdBy: "Prajjwal Kapoor",
         links: { github: "https://github.com/prajjwalkapoor/kairy" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/kairy.png",
+        image: "/projects/kairy.png",
     },
     {
         title: "Visual Web Code",
@@ -1097,7 +1085,7 @@ export const projectlist = [
             "Feature-rich code editor in your browser. Just upload your file or an image of code and start coding.",
         createdBy: "Aksh Bansal",
         links: { github: "https://visualwebcode.netlify.app/" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/visual-web-code.jpeg",
+        image: "/projects/visual-web-code.jpeg",
     },
     {
         title: "Watcher",
@@ -1106,7 +1094,7 @@ export const projectlist = [
             "Watcher is CLI-app (at this moment) which helps you to get perspective about your Screen-time",
         createdBy: "Vaishnav Deore",
         links: { github: "https://github.com/Waishnav/Watcher" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/watcher.png",
+        image: "/projects/watcher.png",
     },
     {
         title: "MICP Leaderboard",
@@ -1114,7 +1102,7 @@ export const projectlist = [
         description: "Most Improved Competitive Programmers Leaderboard",
         createdBy: "Aksh Bansal",
         links: { github: "https://micp-leaderboard.vercel.app/" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/micp.jpeg",
+        image: "/projects/micp.jpeg",
     },
     {
         title: "BitBot",
@@ -1123,7 +1111,7 @@ export const projectlist = [
             "A small lazy discord bot to inspire the development-bug inside me",
         createdBy: "BitByte",
         links: { github: "https://github.com/BitByte-TPC/BitBot" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/bitbot.png",
+        image: "/projects/bitbot.png",
     },
     {
         title: "Contest Saathi",
@@ -1132,7 +1120,7 @@ export const projectlist = [
             "Contest Saathi allows enthusiasts of competitive programming to keep up with the latest competitions and get alerts about forthcoming ones.",
         createdBy: "Tushar Jain",
         links: { github: "https://github.com/Tusharjain123/Contest-Saathi" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/contestSaathi.png",
+        image: "/projects/contestSaathi.png",
     },
     {
         title: "Jagrati Android App",
@@ -1141,7 +1129,7 @@ export const projectlist = [
             "Official AndroidApp of Jagrati - An Initiative of IIITians",
         createdBy: "BitByte",
         links: { github: "https://github.com/BitByte-TPC/Jagrati" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/jagriti.jpg",
+        image: "/projects/jagriti.jpg",
     },
     {
         title: "News on Terminal",
@@ -1150,7 +1138,7 @@ export const projectlist = [
             "News on terminal helps you to get news that you want right on your terminal so that you don't get bored while coding!",
         createdBy: "Divyansh Tripathi, Prakash Dwivedi, Rameshwar Paryani",
         links: { github: "https://github.com/theoden42/news-on-terminal" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/news.jpg",
+        image: "/projects/news.jpg",
     },
     {
         title: "Splitit : The Blockchain expense splitter",
@@ -1160,7 +1148,7 @@ export const projectlist = [
         createdBy:
             "Bhavik Agarwal, Deepanshu Singh, Samyak Bhargava, Raman Chaudhary",
         links: { github: "https://github.com/sdeepanshu17/hackbyte" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/splitt.jpg",
+        image: "/projects/splitt.jpg",
     },
     {
         title: "Jagrati Wep App",
@@ -1168,7 +1156,7 @@ export const projectlist = [
         description: "Official WebApp of Jagrati - An Initiative of IIITians",
         createdBy: "Priyansh Garg",
         links: { github: "https://jagrati.iiitdmj.ac.in/" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/jagratiweb.jpeg",
+        image: "/projects/jagratiweb.jpeg",
     },
     {
         title: "Alumini Connect",
@@ -1176,7 +1164,7 @@ export const projectlist = [
         description: "Alumni Portal for IIITDM Jabalpur",
         createdBy: "BitByte",
         links: { github: "https://alumni.iiitdmj.ac.in/" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/alumini.jpeg",
+        image: "/projects/alumini.jpeg",
     },
     {
         title: "Expense Splitter",
@@ -1185,7 +1173,7 @@ export const projectlist = [
             "Expense Spliter is an android application built using Kotlin and Firebase that allows users to split expenses among friends.",
         createdBy: "Priyanshu Agarwal, Pranjal Jha, Rishabh Gupta",
         links: { github: "https://github.com/IamRishabhGupta/expensesplitter" },
-        image: "https://iiitdmj.ac.in/webix.iiitdmj.ac.in/images/projects/expense.jpeg",
+        image: "/projects/expense.jpeg",
     },
 ]
 
