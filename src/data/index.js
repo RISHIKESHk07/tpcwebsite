@@ -59,41 +59,29 @@ export const teamsData = [
         mockCards: [
             // Array of cards to show in Modal
             {
-                name: "Shashwat Gupta",
+                name: "Eshaan Modi",
                 position: "Coordinator",
-                ImageSRC: "Test image src",
+                imageSrc: "eshaan.jpg",
                 links: "Test links",
             },
             {
-                name: "Priyansh Mehta",
+                name: "Rishi Godre",
                 position: "Co-coordinator",
-                ImageSRC: "Test image src",
+                imageSrc: "Rishi.jpg",
                 links: "Test links",
             },
         ],
         allCards: [
             {
-                name: "Shashwat Gupta",
+                name: "Eshaan Modi",
                 position: "Coordinator",
-                ImageSRC: "Test image src",
+                imageSrc: "eshaan.jpg",
                 links: "Test links",
             },
             {
-                name: "Priyansh Mehta",
+                name: "Rishi Godre",
                 position: "Co-coordinator",
-                ImageSRC: "Test image src",
-                links: "Test links",
-            },
-            {
-                name: "Ramgopal",
-                position: "Nobody",
-                ImageSRC: "Test image src",
-                links: "Test links",
-            },
-            {
-                name: "Kaarti",
-                position: "Nobody",
-                ImageSRC: "Test image src",
+                imageSrc: "Rishi.jpg",
                 links: "Test links",
             },
         ],
