@@ -19,7 +19,7 @@ const NavItem = ({ label, href, toggleMenu = null }) => {
 
 	return (
 		<div
-			className={`group relative text-[#fff] px-5 py-4 rounded-2xl
+			className={`group relative hoverable text-[#fff] px-5 py-4 rounded-2xl
       sm:rounded-full transition-all ease-in-out focus-visible:outline-2 ${
 				pathname === href ? "bg-[#1a1a1a] sm:bg-[#333]" : "sm:hover:bg-[#333]"
 			}`}

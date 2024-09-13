@@ -9,6 +9,20 @@
     }
 }
 
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to bottom right, #3cff5b -16.22%, #2fcdff 100%);
+  opacity: 30%;
+  border-radius: 50%;
+  pointer-events: none;
+  border: #2fcdff 1px solid;
+  z-index: 9999;
+}
+
 .green-gradient-text {
     background: linear-gradient(to bottom right, #3cff5b -16.22%, #2fcdff 100%);
     -webkit-background-clip: text;

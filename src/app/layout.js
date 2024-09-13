@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_UIcomponents/Navbar";
 import Footer from "./_UIcomponents/Footer";
+import CustomCursor from "./_UIcomponents/CursorAnim";
 
 const poppins = Poppins({ subsets: ["latin"] , weight: ["400", "500", "600", "700"] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <Navbar />
+        <CustomCursor />
         {children}
         <Footer />
       </body>
