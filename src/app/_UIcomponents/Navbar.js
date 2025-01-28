@@ -12,6 +12,7 @@ const navigationItems = [
 	{ label: "Projects", href: "/projects" },
 	{ label: "Alumni", href: "/alumni" },
 	{ label: "Events", href: "/events" },
+	{ label: "Reports", href: "/reports" },
 ];
 
 const NavItem = ({ label, href, toggleMenu = null }) => {
