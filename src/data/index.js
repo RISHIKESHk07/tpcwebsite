@@ -1518,3 +1518,19 @@ export const pastEvents = [
         priority: false,
     },
 ]
+
+
+export const reportData = [
+    {
+        id: "1",
+        name: "Code Rumble 2.0",
+        date: "20th Oct, 2024",
+        link: "https://docs.google.com/document/d/1nUAvHmkTjc7WS0PzNGRH8dJNi0zsjUoWleln-_m8oUM",
+    },
+    {
+        id: "2",
+        name: "HackCBS",
+        date: "9th - 10th Nov, 2024",
+        link: "https://docs.google.com/document/d/17-79sUY7eCsCTYx66TpE7S7nCF2CsBP3_Kxd-PnGN70",
+    },
+]
